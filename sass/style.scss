@@ -1,0 +1,167 @@
+/* Variables */
+$color-main: #361217;
+$color-white: #ffffff;
+$color-orange: #f5d951;
+$font-text: 'Roboto Condensed', Sans-Serif;
+$font-header: 'Cabin', Sans-Serif;
+
+/* Global*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: $color-white;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+    color: #2c2c54;
+}
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    text-align: center center;
+}
+/*NAV*/
+
+.nav-splash-wrapper {
+   
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25px 5%;
+}
+.nav-splash-wrapper:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.86;
+    background-image: url('/images/tlonav.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+.navbar-brand {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    color: $color-orange;
+    padding: 0 20%;
+}
+.menu {
+    justify-content: center;
+    margin: 0 10%;
+    font-size: 18px;
+}
+.list-menu {
+    list-style-type: none;
+}
+.list-element {
+    padding: 0 20px;
+    color: $color-white;
+}
+.nav-link {
+    color: $color-white;
+    text-decoration: none;
+}
+
+/* Splash */
+.splash {
+    
+    position: relative;
+    margin-top: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.splash-inner {
+    text-decoration: none;
+    margin: 5px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: $color-main;
+    margin-top: 12%;
+}
+.page-title {
+    font-size: 50px;
+    font-family: $font-header;
+    margin: 0px;
+}
+
+.page-subtitle {
+    font-size: 72px;
+    margin: 0px;
+}
+.btn {
+    display: inline-block;
+    min-width: 200px;
+    margin: 5px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 100% 0; 
+    background-size: 300%;
+    background-color: $color-orange;
+    
+}    
+.btn-one {
+    color: $color-white;
+}
+.btn:hover {
+    background-position: 0 100%;
+    color: $color-main;
+    background-image: linear-gradient(90deg, $color-orange 50%, transparent 50%);
+    transition: all 1s;
+}
+.btn-one:hover {
+    color: $color-main;
+}
+/*THREE-COLUMNS*/
+.three-columns {
+    margin: 10%;
+}
+.three-columns-title {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+.three-columns-title {
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 5px;
+    }
+}
+.three-columns-cards {
+    text-align: center;
+
+}
+.three-cards a {
+    i {
+    font-size: 30px;
+    margin: 48px 15px;
+    background: $color-white;
+    width: 80px;
+    height: 80px;
+    color: $color-orange;
+    border-radius: 50%;
+    text-align: center;
+    border: solid 3px $color-orange;
+    }
+    i:before {
+    line-height: 80px;
+    }
+}
