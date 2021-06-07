@@ -2,6 +2,7 @@
 $color-main: #361217;
 $color-white: #ffffff;
 $color-orange: #f5d951;
+$color-light: #cce0df;
 $font-text: 'Roboto Condensed', Sans-Serif;
 $font-header: 'Cabin', Sans-Serif;
 
@@ -127,7 +128,7 @@ body {
 }
 /*THREE-COLUMNS*/
 .three-columns {
-    margin: 10%;
+    margin: 5% 15%;
 }
 .three-columns-title {
     text-align: center;
@@ -163,5 +164,63 @@ body {
     }
     i:before {
     line-height: 80px;
+    }
+}
+/*OURPORTFOLIO*/
+.our-portfolio {
+    background-color: $color-light;
+    padding: 5%;
+}
+.our-portfolio-title {
+    text-align: center;
+}
+.our-portfolio-title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.six-cards {
+    text-align: center;
+    margin: 5% 15%;
+    
+    img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+    .card-portfolio {
+        background-color: $color-white;
+    }
+    .col-4 {
+        padding: 0;
+        background-color: $color-white;
+        
+    }
+        
+    
+}
+/*FOOTER*/
+.footer-pages {
+    margin: 2% 15%;
+}
+.footer-list-element {
+    list-style-type: none;
+    padding: 0 10px;
+    i {
+        font-size: 16px;
+        margin: 0;
+        background: $color-main;
+        width: 40px;
+        height: 40px;
+        color: $color-white;
+        border-radius: 50%;
+        text-align: center;
+        }
+    i:before {
+        line-height: 40px;
+    }
+    .row {
+        padding-left: 0;
     }
 }
